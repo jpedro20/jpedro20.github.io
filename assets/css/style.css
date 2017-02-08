@@ -3,6 +3,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	color: #595959;
+	background-color: #cacaca;
 }
 
 .container {
@@ -20,6 +21,25 @@ body {
 }
 
 .container::after {
+	clear: both;
+}
+
+.content-container {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.section-container {
+	padding: 30px;
+	background: url('../img/patterns/background-white.png') repeat 0 0;
+}
+
+.section-container::before, .section-container::after {
+	display: table;
+	content: " ";
+}
+
+.section-container::after {
 	clear: both;
 }
 
@@ -76,11 +96,11 @@ body {
 }
 
 .profile-desc .profile-social a {
-	color: #595959;
+	color: #737373;
 }
 
 .profile-desc .profile-social a:hover {
-	color: #444444;
+	color: #595959;
 }
 
 .link-contact {
@@ -114,4 +134,21 @@ body {
 
 .link-contact i {
 	margin-right: 5px;
+}
+
+.about-me h2 {
+	font-size: 26px;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.about-me p {
+	margin: 0;
+	font-size: 14px;
+	line-height: 1.8;
+	text-align: justify;
+}
+
+.about-me i {
+	color: #737373;
 }
