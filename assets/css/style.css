@@ -7,11 +7,11 @@ body {
 }
 
 .container {
-	width: 1360px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	padding: 0 40px;
+	width: 100%;
+	padding: 0 15px;
 	margin: 0 auto;
 }
 
@@ -45,7 +45,6 @@ body {
 
 .inline-list {
 	padding: 0;
-	margin-left: -5px;
 	list-style: none;
 }
 
@@ -59,15 +58,15 @@ body {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	padding: 30px 0;
+	padding: 50px 0;
 	border-top: 10px solid #595959;
 	background: url('../img/patterns/background-white.png') repeat 0 0;
+	text-align: center;
 }
 
 .profile-image {
 	width: 185px;
 	height: 185px;
-	margin-right: 40px;
 	border-radius: 50%;
 }
 
@@ -87,7 +86,12 @@ body {
 	font-size: 24px;
 	font-weight: 400;
 	margin-top: 0;
-	margin-bottom: 10px;
+	margin-bottom: 25px;
+}
+
+.profile-desc .profile-social {
+	margin-top: 0;
+	margin-bottom: 14px;
 }
 
 .profile-desc .profile-social a {
@@ -107,33 +111,35 @@ body {
 	display: table;
 	position: absolute;
 	top: 0;
-	right: 145px;
-	width: 150px;
-	height: 40px;
+	right: 15px;
+	width: 45px;
+	height: 30px;
 	background-color: #595959;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
 	text-align: center;
+}
+
+.link-contact a {
+	display: table-cell;
+	vertical-align: middle;
+	line-height: 0;
+	font-size: 0;
+	text-decoration: none;
+	color: transparent;
+}
+
+.link-contact i {
+	font-size: 14px;
+	color: #fff;
 }
 
 .link-contact:hover {
 	background-color: #cacaca;
 }
 
-.link-contact:hover a {
+.link-contact:hover i {
 	color: #595959;
-}
-
-.link-contact a {
-	display: table-cell;
-	vertical-align: middle;
-	font-size: 14px;
-	text-decoration: none;
-	color: #fff;
-}
-
-.link-contact i {
-	margin-right: 5px;
 }
 
 .about-me h2 {
@@ -151,4 +157,55 @@ body {
 
 .about-me i {
 	color: #737373;
+}
+
+
+@media screen and (min-width: 768px) {
+	.container {
+		width: 80%;
+		padding: 0;
+	}
+
+	.profile-header {
+		text-align: left;
+	}
+
+	.profile-image {
+		float: left;
+		margin-right: 40px;
+	}
+
+	.profile-desc {
+		float: left;
+	}
+
+	.profile-desc h2.profile-position {
+		margin-bottom: 15px;
+	}
+
+	.profile-desc .profile-social {
+		margin: 0 0 0 -5px;
+	}
+
+	.link-contact {
+		right: 10%;
+		width: 135px;
+		height: 40px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+
+	.link-contact a {
+		line-height: 1.15;
+		font-size: 14px;
+		color: #fff;
+	}
+
+	.link-contact i {
+		margin-right: 5px;
+	}
+
+	.link-contact:hover a {
+		color: #595959;
+	}
 }
