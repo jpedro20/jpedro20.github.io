@@ -159,6 +159,11 @@ body {
 	color: #737373;
 }
 
+.footer {
+	background-color: #595959;
+	height: 20px;
+}
+
 
 @media screen and (min-width: 768px) {
 	.container {
