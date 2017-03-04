@@ -6,6 +6,12 @@ body {
 	background-color: #cacaca;
 }
 
+section h2 {
+	font-size: 26px;
+	margin-top: 0;
+	margin-bottom: 25px;
+}
+
 .container {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -142,9 +148,7 @@ body {
 	color: #595959;
 }
 
-.about-me h2 {
-	font-size: 26px;
-	margin-top: 0;
+.about-me {
 	margin-bottom: 20px;
 }
 
@@ -157,6 +161,33 @@ body {
 
 .about-me i {
 	color: #737373;
+}
+
+.projects .project {
+	margin-top: 35px;
+}
+
+.projects .project:first-of-type {
+	margin-top: 0;
+}
+
+.project h3 {
+	font-size: 20px;
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+.project img.screenshot {
+	width: 230px;
+	height: 130px;
+	cursor: pointer;
+}
+
+.project p.description {
+	margin-top: 10px;
+	margin-bottom: 0;
+	font-size: 14px;
+	line-height: 1.8;
 }
 
 .footer {
