@@ -219,6 +219,27 @@ section h2 {
 	background-color: #595959;
 }
 
+.back-to-top {
+	display: none;
+	position: fixed;
+	bottom: 25px;
+	right: 10%;
+	background-color: #595959;
+	padding: 7px 10px;
+	font-size: 25px;
+	color: #fff;
+	border-radius: 20%;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	z-index: 9999;
+}
+
+.back-to-top:hover {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	cursor: pointer;
+}
+
 .footer {
 	background-color: #595959;
 	height: 20px;
